@@ -18,7 +18,7 @@ jobs:
 
       - name: Test setting version using default parameters
         id: test-setversion
-        uses: ./   # Just point to the main folder so the latest code is always used
+        uses: ./custom/   # Just point to the main folder so the latest code is always used
         with:
           version: '1.0.0.0-alpha'
 
