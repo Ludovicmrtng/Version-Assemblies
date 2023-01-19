@@ -1,9 +1,6 @@
 name: 'Set AssemblyInfo Version'
 author: 'Wayconnect'
 description: 'Sets the assembly version number in the specified assembly info file(s)'
-branding:
-  icon: 'tag'
-  color: 'orange'
 inputs:
   version:
     description: 'Assembly version in SemVer format'
