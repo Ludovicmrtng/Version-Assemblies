@@ -12,6 +12,6 @@
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-[assembly: AssemblyVersion("1.11.*")]                 /* Expected result: "9.9.9.##" */
-[assembly: AssemblyFileVersion("22.2.22.*")]          /* Expected result: "9.9.9.##" */
+[assembly: AssemblyVersion("1.0.0.0")]                 /* Expected result: "9.9.9.##" */
+[assembly: AssemblyFileVersion("1.0.0.0")]          /* Expected result: "9.9.9.##" */
 [assembly: AssemblyInformationalVersion("3.3.3.33")]  /* Expected result: "9.9.9.##" */
