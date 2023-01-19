@@ -10,7 +10,7 @@ inputs:
     required: true
   directory:
     description: 'Directory where assembly info file is located'
-    default: './custom/.\'
+    default: 'custom/.\'
   filename:
     description: 'Filename for assembly info'
     default: 'AssemblyInfo.cs'
