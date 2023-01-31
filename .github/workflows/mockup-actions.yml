@@ -15,7 +15,7 @@ on:
 jobs:
   build-dev:
     runs-on: ubuntu-latest
-    if: github.event.inputs.name == develop
+    if: contains(github.event.inputs.name, 'develop')
 
     steps:
       - name: Testting development env
@@ -23,7 +23,7 @@ jobs:
   
   build-qa:
     runs-on: ubuntu-latest
-    if: github.event.inputs.name == test
+    if: contains(github.event.inputs.name, 'test')
 
     steps:
       - name: Testting development env
@@ -31,7 +31,7 @@ jobs:
   
   build-pp:
     runs-on: ubuntu-latest
-    if: github.event.inputs.name == preprod
+    if: contains(github.event.inputs.name, 'preprod')
     steps:
       - name: Testting development env
         run: echo ${{ github.event.inputs.name }}
