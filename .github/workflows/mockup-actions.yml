@@ -1,0 +1,21 @@
+name: Mockup-Workflow-Test
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        type: choice
+        description: Choose your env
+        options: 
+        - develop
+        - test
+        - preprod
+        - prod
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        run: echo ${{ github.event.inputs.name }}
