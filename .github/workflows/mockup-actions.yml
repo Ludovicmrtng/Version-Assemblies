@@ -13,9 +13,25 @@ on:
         - prod
 
 jobs:
-  build:
+  build-dev:
     runs-on: ubuntu-latest
+    if: github.event.inputs.name == develop
 
     steps:
-      - name: Check out the repository
+      - name: Testting development env
+        run: echo ${{ github.event.inputs.name }}
+  
+  build-qa:
+    runs-on: ubuntu-latest
+    if: github.event.inputs.name == test
+
+    steps:
+      - name: Testting development env
+        run: echo ${{ github.event.inputs.name }}
+  
+  build-pp:
+    runs-on: ubuntu-latest
+    if: github.event.inputs.name == preprod
+    steps:
+      - name: Testting development env
         run: echo ${{ github.event.inputs.name }}
